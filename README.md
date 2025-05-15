@@ -16,3 +16,7 @@
 
 -----
 pip install -r requirements.txt
+
+Запуск дешборда:
+-----
+streamlit run dashboard/dashboard.py
