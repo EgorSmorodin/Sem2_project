@@ -1,4 +1,10 @@
 requests
 bs4
 pandas
-re
+matplotlib
+seaborn
+numpy
+scipy
+pathlib
+streamlit
+altair
