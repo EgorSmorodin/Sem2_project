@@ -3,10 +3,12 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 from scipy import stats
+from pathlib import Path
 import warnings
 warnings.filterwarnings('ignore')
 
-file_path = '../data/data_clean.csv'
+current_dir = Path(__file__).resolve().parent
+file_path = current_dir.parent / 'data' / 'data_clean.csv'
 data = pd.read_csv(file_path, encoding='utf-8')
 
 data['Цена(в $)'] = data['Цена(в $)'].str.replace(' ', '').astype(int)
